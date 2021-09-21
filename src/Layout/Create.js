@@ -1,13 +1,11 @@
 import React, {useState} from "react"
-import { useHistory, useParams, Link } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 import { createDeck } from "../utils/api/index"
 
 
 export default function Create (){
   const history = useHistory();
   const [newDeck, setNewDeck] = useState([])
-  const {deckId} = useParams()
-  console.log(deckId)
   
   const changeHandler = (event) => {
     event.preventDefault()

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { readDeck } from '../utils/api';
-import ErrorMessage from './ErrorMessage';
 
 export const Study = () => {
 const { deckId } = useParams();

@@ -11,27 +11,19 @@
       "description": "What are the real names of the members of K-pop phenomenon, BTS?"
     },
     {
-      "name": "Yay",
-      "description": "Hello world!",
-      "id": 8
+      "id": 12,
+      "name": "Numbers",
+      "description": "Counting is fun!"
     },
     {
-      "id": 9
+      "name": "Japanese",
+      "description": "Domo origato, Mr. Roboto",
+      "id": 16
     },
     {
-      "id": 10
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
+      "name": "Korean",
+      "description": "K-everything is life!",
+      "id": 17
     }
   ],
   "cards": [
@@ -94,6 +86,108 @@
       "back": "Jeon Jeonggkuk",
       "deckId": 7,
       "id": 13
+    },
+    {
+      "front": "What is the fan-made BTS chant?",
+      "back": "Kim Namjoon,\nKim Seokjin,\nMin Yoongi,\nJung Ho-seok,\nPark Jimin,\nKim Taehyung,\nJeon Jungkook,\nBTS!",
+      "deckId": 7,
+      "id": 14
+    },
+    {
+      "front": "What",
+      "back": "Nani",
+      "deckId": 16,
+      "id": 18
+    },
+    {
+      "front": "Hello",
+      "back": "Konichiwa",
+      "deckId": 16,
+      "id": 19
+    },
+    {
+      "front": "Thank you",
+      "back": "Origato",
+      "deckId": 16,
+      "id": 20
+    },
+    {
+      "front": "Goodbye",
+      "back": "Sayonara",
+      "deckId": 16,
+      "id": 21
+    },
+    {
+      "front": "Good morning",
+      "back": "Oyaho Gosaimasu",
+      "deckId": 16,
+      "id": 22
+    },
+    {
+      "front": "Eat up!",
+      "back": "Itadakemasu!",
+      "deckId": 16,
+      "id": 23
+    },
+    {
+      "front": "Sorry",
+      "back": "Simosen/Gomenesai",
+      "deckId": 16,
+      "id": 24
+    },
+    {
+      "front": "One",
+      "back": "1",
+      "deckId": 12,
+      "id": 25
+    },
+    {
+      "front": "Two",
+      "back": "2",
+      "deckId": 12,
+      "id": 26
+    },
+    {
+      "front": "Three",
+      "back": "3",
+      "deckId": 12,
+      "id": 27
+    },
+    {
+      "front": "Four",
+      "back": "4",
+      "deckId": 12,
+      "id": 28
+    },
+    {
+      "front": "You",
+      "back": "Ne-ga",
+      "deckId": 17,
+      "id": 29
+    },
+    {
+      "front": "Seesaw",
+      "back": "Shiso",
+      "deckId": 17,
+      "id": 30
+    },
+    {
+      "front": "I love you",
+      "back": "Salanghae",
+      "deckId": 17,
+      "id": 31
+    },
+    {
+      "front": "Really?",
+      "back": "Chincha?",
+      "deckId": 17,
+      "id": 32
+    },
+    {
+      "front": "I miss you",
+      "back": "Bogo shipda",
+      "deckId": 17,
+      "id": 33
     }
   ]
 }

@@ -14,7 +14,6 @@ export default function Deck() {
         async function loadDeck() {
                 if (deckId) {
                 const loadedDeck = await readDeck(deckId);
-                console.log(loadedDeck.cards.length);
                 setDeck(()=>loadedDeck);
                 }
             }
@@ -38,6 +37,7 @@ export default function Deck() {
             cardDelete();
             const reloadDeck = await readDeck(deckId);
             setDeck(reloadDeck);
+            window.location.reload();
         }
     }
   
@@ -62,19 +62,19 @@ export default function Deck() {
                     <div className="col-8">
                         <Link to={`/decks/${deckId}/edit`}>
                             <button className="btn btn-secondary mr-1">
-                                <i class="bi bi-pencil mr-1"></i>
+                                <i className="bi bi-pencil mr-1"></i>
                                 Edit
                             </button>
                         </Link>
                         <Link to={`/decks/${deckId}/study`}>
                             <button className="btn btn-primary mr-1">
-                                <i class="bi bi-book mr-1"></i>
+                                <i className="bi bi-book mr-1"></i>
                                 Study
                             </button>
                         </Link>
                         <Link to={`/decks/${deckId}/cards/new`}>
                             <button className="btn btn-primary">
-                                <i class="bi bi-plus mr-1"></i>
+                                <i className="bi bi-plus mr-1"></i>
                                 Add Card
                             </button>
                         </Link>

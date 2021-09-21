@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
-import { createDeck, listDecks, updateDeck, readDeck, deleteDeck } from "../utils/api/index.js"
-import { useHistory, useParams } from "react-router-dom"
+import { listDecks, deleteDeck } from "../utils/api/index.js"
+import { useHistory } from "react-router-dom"
 
 export default function Home({deckId}){
   const history = useHistory();
@@ -29,23 +29,24 @@ async function loadDecks() {
   
   return (
     <div>
-    <button onClick={() => history.push("/decks/new")}>+ Create Deck</button>
-    <div>
-        {deckList.map((deck, index) => 
-        <div className="container"> 
-        <div className="row card-header"> 
-          <div className="col-10"> 
-            <h4>{deck.name}</h4> 
+      <button onClick={() => history.push("/decks/new")}>+ Create Deck</button>
+      <div>
+          {deckList.map((deck, index) => 
+          <div key={index} className="container"> 
+            <div className="row card-header"> 
+              <div className="col-10"> 
+                <h4>{deck.name}</h4> 
+              </div> 
+              <div className="col-2"> 
+                <p> {deck.cards.length} cards</p> 
+              </div> 
           </div> 
-          <div className="col-2"> 
-            <p> {deck.cards.length} cards</p> 
-          </div> 
-         </div> 
-        {deck.description}<br/>
-        <button className="btn btn-secondary" onClick={() => history.push(`/decks/${deck.id}`)}>View</button>
-        <button type="button" className="btn btn-primary bi bi-eye" onClick={() => history.push(`/decks/${deck.id}/study`)}> Study </button>
-        <button type="button" className="btn btn-primary" onClick={() => history.push(`/decks/${deck.id}/edit`)}> Edit </button>
-        <button type="button" className="btn btn-danger" onClick={() => deleteHandler(deck.id)} > Delete </button></div>)}
-    </div>
+          {deck.description}<br/>
+            <button className="btn btn-secondary" onClick={() => history.push(`/decks/${deck.id}`)}>View</button>
+            <button type="button" className="btn btn-primary bi bi-eye" onClick={() => history.push(`/decks/${deck.id}/study`)}> Study </button>
+            <button type="button" className="btn btn-primary" onClick={() => history.push(`/decks/${deck.id}/edit`)}> Edit </button>
+            <button type="button" className="btn btn-danger" onClick={() => deleteHandler(deck.id)} > Delete </button>
+         </div>)}
       </div>
+    </div>
   )}

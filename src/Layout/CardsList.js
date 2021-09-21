@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link, useParams } from "react-router-dom";
-import Card from "./Card";
 
 //load the deck in Deck.js
 //import deck into cards as prop
@@ -19,8 +18,8 @@ export default function CardsList({ deck, handleCardDelete }) {
         <div className="container">
           <h2>Cards</h2>
           <div className="card-list">
-              {deck.cards.map((card) => (
-                  <div className="card">
+              {deck.cards.map((card, index) => (
+                  <div key={index} className="card">
                       <div className="card-body">
                           <div className="container">
                               <div className="row justify-content-start my-2">
