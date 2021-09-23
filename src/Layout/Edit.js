@@ -28,10 +28,6 @@ export default function Edit () {
       }
       loadData();
     }, [deckId]);
-
-    useEffect(() => {
-        console.log("Hi there!")
-    }, [])
   
     const handleChange = ({ target }) => {
       const value = target.value;
@@ -43,7 +39,7 @@ export default function Edit () {
     const history = useHistory();
     const handleSubmit = (event) => {
       event.preventDefault();
-      //console.log("Submitted:", deck);
+  
       async function updateData() {
         try {
           await updateDeck(deck);

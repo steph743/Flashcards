@@ -9,6 +9,7 @@ export default function CardForm(props){
                 Front Side
                 </label> 
                 <textarea
+                    required
                     type="textarea"
                     className="form-control"
                     id="front"
@@ -23,6 +24,7 @@ export default function CardForm(props){
                     Back Side
                 </label>
                 <textarea
+                    required
                     type="textarea"
                     className="form-control"
                     id="back"

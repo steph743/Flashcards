@@ -15,10 +15,6 @@ async function loadDecks() {
     loadDecks();
   }, [])
 
-  useEffect(() => {
-      console.log("deck list updated:", deckList)
-  }, [deckList])
-
   const deleteHandler = (id) => {
     const deleteAlert = window.confirm( "You will not be able to recover the deck!" );
     if (deleteAlert) {
@@ -45,7 +41,7 @@ async function loadDecks() {
             <button className="btn btn-secondary" onClick={() => history.push(`/decks/${deck.id}`)}>View</button>
             <button type="button" className="btn btn-primary bi bi-eye" onClick={() => history.push(`/decks/${deck.id}/study`)}> Study </button>
             <button type="button" className="btn btn-primary" onClick={() => history.push(`/decks/${deck.id}/edit`)}> Edit </button>
-            <button type="button" className="btn btn-danger" onClick={() => deleteHandler(deck.id)} > Delete </button>
+            <button type="button" className="btn btn-danger" onClick={() => deleteHandler(deck.id)}> Delete </button>
          </div>)}
       </div>
     </div>

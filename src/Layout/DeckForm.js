@@ -5,6 +5,7 @@ export default function DeckForm({ formData, handleChange }){
       <div>
         <label>Name:</label> <br />
         <input
+          required
           id="name"
           type="text"
           name="name"
@@ -16,6 +17,7 @@ export default function DeckForm({ formData, handleChange }){
         <br />
         <label>Description:</label> <br />
         <textarea
+          required
           id="description"
           type="textarea"
           name="description"

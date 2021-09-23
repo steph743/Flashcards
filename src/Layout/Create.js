@@ -36,12 +36,12 @@ export default function Create (){
     <form className="form-group" onSubmit={submitHandler}>
       <label className="form-label" htmlFor="name">
         Deck Name:
-        <input className="form-control" type="text" id="name" name="name" onChange={changeHandler} />
+        <input required className="form-control" type="text" id="name" name="name" onChange={changeHandler} />
       </label>
       <br /> 
       <label htmlFor="description">
         Description:
-        <textarea className="form-control" id="description" name="description" onChange={changeHandler} rows={3} />
+        <textarea required className="form-control" id="description" name="description" onChange={changeHandler} rows={3} />
       </label>
       <br/>
       <button className="btn btn-primary" type="submit">Submit</button>

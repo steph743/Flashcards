@@ -11,11 +11,6 @@
       "description": "What are the real names of the members of K-pop phenomenon, BTS?"
     },
     {
-      "id": 12,
-      "name": "Numbers",
-      "description": "Counting is fun!"
-    },
-    {
       "name": "Japanese",
       "description": "Domo origato, Mr. Roboto",
       "id": 16
@@ -134,30 +129,6 @@
       "back": "Simosen/Gomenesai",
       "deckId": 16,
       "id": 24
-    },
-    {
-      "front": "One",
-      "back": "1",
-      "deckId": 12,
-      "id": 25
-    },
-    {
-      "front": "Two",
-      "back": "2",
-      "deckId": 12,
-      "id": 26
-    },
-    {
-      "front": "Three",
-      "back": "3",
-      "deckId": 12,
-      "id": 27
-    },
-    {
-      "front": "Four",
-      "back": "4",
-      "deckId": 12,
-      "id": 28
     },
     {
       "front": "You",
