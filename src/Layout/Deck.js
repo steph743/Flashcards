@@ -35,7 +35,6 @@ export default function Deck() {
         if (confirm) {
             await deleteCard(target.value);
             const reloadDeck = await readDeck(deckId);
-            console.log("reloaded deck:", reloadDeck);
             setDeck(reloadDeck);
         }
     }
