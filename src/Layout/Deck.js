@@ -33,11 +33,10 @@ export default function Deck() {
     const handleCardDelete = async ({ target }) => {
         const confirm = window.confirm("Delete this card? You will not be able to recover it.");
         if (confirm) {
-            const cardDelete = async () => await deleteCard(target.value);
-            cardDelete();
+            await deleteCard(target.value);
             const reloadDeck = await readDeck(deckId);
+            console.log("reloaded deck:", reloadDeck);
             setDeck(reloadDeck);
-            window.location.reload();
         }
     }
   

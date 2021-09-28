@@ -15,11 +15,11 @@ async function loadDecks() {
     loadDecks();
   }, [])
 
-  const deleteHandler = (id) => {
+  const deleteHandler = async (id) => {
     const deleteAlert = window.confirm( "You will not be able to recover the deck!" );
     if (deleteAlert) {
-        deleteDeck(id)
-        window.location.reload();
+        await deleteDeck(id);
+        loadDecks();
     }
   }
   
